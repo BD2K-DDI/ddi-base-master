@@ -21,6 +21,24 @@
             </roles>
             <organization>http://www.ebi.ac.uk/ddi</organization>
         </developer>
+        <developer>
+            <id>tvu</id>
+            <name>Manh Tu VU</name>
+            <email>tvu@ebi.ac.uk</email>
+            <roles>
+                <role>Author</role>
+            </roles>
+            <organization>http://www.ebi.ac.uk/ddi</organization>
+        </developer>
+        <developer>
+            <id>gdass</id>
+            <name>Gaurhari Dass</name>
+            <email>gdass@ebi.ac.uk</email>
+            <roles>
+                <role>Author</role>
+            </roles>
+            <organization>http://www.ebi.ac.uk/ddi</organization>
+        </developer>
     </developers>
 
     <url>https://github.com/OmicsDI/ddi-base-master.git</url>
@@ -341,6 +359,16 @@
                     <value>true</value>
                 </property>
             </activation>
+        </profile>
+
+        <profile>
+            <id>disable-java8-doclint</id>
+            <activation>
+                <jdk>[1.8,)</jdk>
+            </activation>
+            <properties>
+                <additionalparam>-Xdoclint:none</additionalparam>
+            </properties>
         </profile>
     </profiles>
 </project>
