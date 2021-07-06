@@ -5,7 +5,7 @@
 
     <groupId>uk.ac.ebi.ddi.maven</groupId>
     <artifactId>ddi-base-master</artifactId>
-    <version>1.9-SNAPSHOT</version>
+    <version>1.9</version>
     <packaging>pom</packaging>
 
     <name>DDI master pom file</name>
@@ -56,7 +56,7 @@
         <connection>scm:git:github.com/OmicsDI/ddi-base-master.git</connection>
         <developerConnection>scm:git:git@github.com:OmicsDI/ddi-base-master.git</developerConnection>
         <url>https://github.com/OmicsDI/ddi-base-master.git</url>
-        <tag>HEAD</tag>
+        <tag>ddi-base-master-1.9</tag>
     </scm>
 
     <properties>
@@ -338,9 +338,11 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.8.1</version>
             </plugin>
 
             <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-deploy-plugin</artifactId>
                 <version>2.8.2</version>
                 <executions>
@@ -357,7 +359,7 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-release-plugin</artifactId>
-                <version>2.5.3</version>
+                <version>3.0.0-M1</version>
                 <configuration>
                     <localCheckout>true</localCheckout>
                     <pushChanges>false</pushChanges>
